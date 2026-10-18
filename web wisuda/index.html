@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Day | 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">GRADUATION<span>.</span></a>
+        <a href="#gallery" class="nav-link">Galeri ↗</a>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content reveal">
+                <p class="eyebrow">A CHAPTER TO REMEMBER</p>
+
+                <h1>
+                    One chapter<br>
+                    ends. <em>Life</em><br>
+                    begins.
+                </h1>
+
+                <p class="description">
+                    Hari ini bukan cuma tentang toga dan ijazah.
+                    Ini tentang perjuangan, kenangan, dan perjalanan
+                    yang membawa kita sampai di titik ini.
+                </p>
+
+                <a href="#gallery" class="button">
+                    Lihat momen <span>↓</span>
+                </a>
+            </div>
+
+            <div class="hero-art reveal">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="stamp">
+                    <span>CLASS OF</span>
+                    <strong>2026</strong>
+                    <span>THE NEXT CHAPTER</span>
+                </div>
+
+                <p class="hero-caption">A DAY WORTH KEEPING</p>
+            </div>
+        </section>
+
+        <section class="message reveal">
+            <p class="section-label">01 / THE MOMENT</p>
+
+            <div class="message-content">
+                <h2>Bukan akhir.<br><em>Awal yang baru.</em></h2>
+
+                <p>
+                    Untuk semua pagi yang terasa berat, tugas yang
+                    hampir bikin menyerah, tawa di sela pelajaran,
+                    dan perjuangan yang nggak selalu terlihat:
+                    kita berhasil sampai di sini.
+                    Simpan hari ini baik-baik.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <p class="section-label reveal">02 / PHOTO ARCHIVE</p>
+
+            <div class="gallery-heading reveal">
+                <h2>Three frames.<br>
+                    <em>One unforgettable day.</em>
+                </h2>
+
+                <p>
+                    Tiga foto, ribuan kenangan.
+                    Beberapa momen memang pantas disimpan.
+                </p>
+            </div>
+
+            <div class="gallery">
+                <button class="photo-card photo-main reveal"
+                    data-index="0" aria-label="Perbesar foto pertama">
+                    <img src="images/foto1.jpg" alt="Foto wisuda pertama">
+                    <span class="photo-number">01</span>
+                    <span class="photo-info">
+                        <small>THE FAVORITE</small>
+                        <strong>Hari yang ditunggu</strong>
+                    </span>
+                    <span class="photo-arrow">↗</span>
+                </button>
+
+                <button class="photo-card reveal"
+                    data-index="1" aria-label="Perbesar foto kedua">
+                    <img src="images/foto2.jpg" alt="Foto wisuda kedua">
+                    <span class="photo-number">02</span>
+                    <span class="photo-info">
+                        <small>THE PEOPLE</small>
+                        <strong>Orang hebat</strong>
+                    </span>
+                    <span class="photo-arrow">↗</span>
+                </button>
+
+                <button class="photo-card reveal"
+                    data-index="2" aria-label="Perbesar foto ketiga">
+                    <img src="images/foto3.jpg" alt="Foto wisuda ketiga">
+                    <span class="photo-number">03</span>
+                    <span class="photo-info">
+                        <small>THE NEXT STEP</small>
+                        <strong>Menuju cerita baru</strong>
+                    </span>
+                    <span class="photo-arrow">↗</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="closing reveal">
+            <p class="section-label">03 / UNTIL NEXT TIME</p>
+
+            <h2>We made it.<br>
+                <em>And this is just the start.</em>
+            </h2>
+
+            <p>
+                Terima kasih untuk setiap cerita yang pernah
+                menjadi bagian dari perjalanan ini.
+            </p>
+
+            <a href="#home" class="back-top">Kembali ke atas ↑</a>
+        </section>
+    </main>
+
+    <footer>
+        <span>GRADUATION ARCHIVE © 2026</span>
+        <span>MADE TO REMEMBER.</span>
+    </footer>
+
+    <!-- Tampilan foto besar -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close" id="closeBtn" aria-label="Tutup">×</button>
+        <button class="prev" id="prevBtn" aria-label="Foto sebelumnya">‹</button>
+
+        <img id="lightboxImage" src="" alt="Foto wisuda">
+
+        <button class="next" id="nextBtn" aria-label="Foto berikutnya">›</button>
+        <p id="lightboxCaption"></p>
+    </div>
+
+</body>
+</html>
